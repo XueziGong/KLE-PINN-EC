@@ -2,7 +2,7 @@
 import numpy as np
 
 # min-max norm
-eigen_rd_pth = '.../Geo-PINN/data/eigens/eta=50_var=3/' # replace with the correct path
+eigen_rd_pth = '.../KLE-PINN-EC/data/eigens/eta=50_var=3/' # replace with the correct path
 eigen_function = np.load(eigen_rd_pth + 'eigen_vectors.npy')
 eigen_values = np.load(eigen_rd_pth + 'eigen_values.npy').reshape(1,-1)
 
