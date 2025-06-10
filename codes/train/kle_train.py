@@ -22,9 +22,9 @@ def loop(DEVICE, mu_lnKs, eta, L, variance, nkl, exp_design, random_seed):
     
     ' File path '
     eigen_info = 'eta=' + str(eta) + '_var=' + str(variance) + '/'
-    main_path = '.../Geo-PINN/results/inverse/' + exp_design + '/' # replace with the correct path
-    eigen_path = '.../Geo-PINN/data/eigens/' + eigen_info # replace with the correct path
-    training_data_path = '.../Geo-PINN/data/' + exp_design + '/' # replace with the correct path
+    main_path = '.../KLE-PINN-EC/results/inverse/' + exp_design + '/' # replace with the correct path
+    eigen_path = '.../KLE-PINN-EC/data/eigens/' + eigen_info # replace with the correct path
+    training_data_path = '.../KLE-PINN-EC/data/' + exp_design + '/' # replace with the correct path
     group_path = str(random_seed) + '/'
     save_path = main_path + model_info + group_path
 
