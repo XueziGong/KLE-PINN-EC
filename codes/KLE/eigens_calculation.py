@@ -7,7 +7,7 @@ L = 100
 eta = 50
 variance = 3
 nkl = 9
-save_path_1 = '.../Geo-PINN/data/eigens/' # replace with the correct path
+save_path_1 = '.../KLE-PINN-EC/data/eigens/' # replace with the correct path
 save_path_2 = 'eta=' + str(eta) + '_var=' + str(variance) + '/'
 save_path = save_path_1 + save_path_2
 
