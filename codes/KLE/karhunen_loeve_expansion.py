@@ -14,7 +14,7 @@ np.random.seed(random_seed)
 xi = np.random.normal(0, 1, size=n)
 nkl = 9
 xi = xi[:nkl,]
-eigen_path_1 = '.../Geo-PINN/data/eigens/' # replace with the correct path
+eigen_path_1 = '.../KLE-PINN-EC/data/eigens/' # replace with the correct path
 eigen_path_2 = 'eta=' + str(eta) + '_var=' + str(variance) + '/'
 eigen_path = eigen_path_1 + eigen_path_2
 eigenvalues = np.load(eigen_path + 'eigen_values.npy')
@@ -26,7 +26,7 @@ for i in range(nkl):
     lnKs = lnKs + np.sqrt(eigenvalues[i]) * eigenvectors[:, i] * xi[i]
 print("Reduced soil parameter fields --- lnKs：", lnKs)
 
-save_path_main = '.../Geo-PINN/reference_para/seed_' + str(random_seed) + '/' # replace with the correct path
+save_path_main = '.../KLE-PINN-EC/reference_para/seed_' + str(random_seed) + '/' # replace with the correct path
 save_path = save_path_main + eigen_path_2
 np.save(save_path_main + 'xi', xi)
 np.save(save_path + 'lnKs_reference', lnKs)
