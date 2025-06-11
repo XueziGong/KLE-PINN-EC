@@ -1,4 +1,5 @@
 # KLE-PINN-EC
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14874531.svg)](https://doi.org/10.5281/zenodo.14874531)
 
 This repository contains the code accompanying our paper **"Physics-Informed Neural Network with Enhanced Coupling for Inverse Modeling of Unsaturated Flow in Heterogeneous Soils"**, which is currently under review.
 
@@ -6,4 +7,3 @@ This repository contains the code accompanying our paper **"Physics-Informed Neu
 
 **Contact:**  
 ✉️ x42gong@whu.edu.cn
-
