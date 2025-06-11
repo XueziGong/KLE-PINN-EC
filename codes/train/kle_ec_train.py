@@ -83,7 +83,7 @@ def loop(DEVICE, mu_lnKs, eta, L, variance, nkl, exp_design, random_seed):
     def compute_loss():
         # forward Propagation
         xi_pred_col = pinn.random_coefficients.xi.repeat(z_col.size(0), 1)    
-        Ks_col = geo_pinn.compute_Ks(z_col, xi_pred_col, eigen_values,
+        Ks_col = kle_pinn_ec.compute_Ks(z_col, xi_pred_col, eigen_values,
                                      mu_lnKs, eta, wn, L)
         psi_col = pinn(t_col, z_col)
         theta_col = MVG_model.theta(psi_col)
