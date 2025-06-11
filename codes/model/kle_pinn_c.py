@@ -75,7 +75,7 @@ def normalize_tz(t, z):
     z_norm = 2*((z + 99) / 99) - 1
     return t_norm, z_norm
 
-eigen_path = '.../KLE-PINN-EC/data/eigens/eta=50_var=3/normalize/'
+eigen_path = '.../KLE-PINN-EC/data/eigens/eta=50_var=3/normalize/' # replace with the correct path
 eigen_min= torch.tensor(np.load(eigen_path + 'eigen_min.npy')).reshape(1,-1).to(torch.float32)
 eigen_range = torch.tensor(np.load(eigen_path + 'eigen_range.npy')).reshape(1,-1).to(torch.float32)
 
